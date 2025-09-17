@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Dreamers</title>
+  <link rel="stylesheet" href="css/estilo-cont.css">
+</head>
+
+<body>
+
+
+  <!-- 🔝 Navegación -->
+  <div class="barra-nav">
+    <nav>
+      <div class="nav-logo"> Digital Dreamers</div>
+      <div class="nav-menu">
+        <a class="menu-boton" href="index.html">Inicio </a>
+        <a class="menu-boton" href="nosotras.html">Sobre nosotras</a>
+        <a class="menu-boton" href="valores.html">Nuestros valores</a>
+        <a class="menu-boton" href="#contacto">Contacto</a>
+        <a class="menu-boton" href="calculadora.html">Calculadora</a>
+      </div>
+      <div class="nav-buscador">
+        <input type="text" placeholder="Buscar">
+        <button type="submit">🔍</button>
+      </div>
+    </nav>
+  </div>
+
+  <!-- 🌟 Servicios -->
+  <section id="servicios" class="servicios">
+    <h2>¿En qué podemos ayudarte?</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <h3>🎨 Diseño UX/UI</h3>
+        <p>Diseñamos experiencias digitales atractivas, intuitivas y centradas en el usuario.</p>
+      </div>
+      <div class="servicio">
+        <h3>💻 Desarrollo Web</h3>
+        <p>Desde páginas informativas hasta plataformas dinámicas, creamos soluciones a medida.</p>
+      </div>
+      <div class="servicio">
+        <h3>🚀 Estrategia Digital</h3>
+        <p>Te guiamos en marketing, redes sociales y posicionamiento online.</p>
+      </div>
+      <div class="servicio">
+        <h3>🤖 Integración con IA</h3>
+        <p>Implementamos herramientas de inteligencia artificial para potenciar tu negocio.</p>
+      </div>
+      <div class="servicio">
+        <h3>🌍 Consultoría en Diversidad Tech</h3>
+        <p>Fomentamos equipos inclusivos y entornos tecnológicos más diversos.</p>
+      </div>
+      <div class="servicio">
+        <h3>📚 Formación y Workshops</h3>
+        <p>Capacitaciones prácticas en programación, diseño y herramientas digitales.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 💡 ¿Por qué elegirnos? -->
+  <section id="porque" class="porque">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="porque-grid">
+      <div class="porque-item">
+        <h3>💜 Perspectiva Única</h3>
+        <p>Como equipo 100% femenino, aportamos una visión fresca y diversa que transforma cada proyecto en algo
+          auténtico.</p>
+      </div>
+      <div class="porque-item">
+        <h3>⚡ Agilidad y Flexibilidad</h3>
+        <p>Nos adaptamos rápidamente a los cambios con metodologías ágiles, entregando resultados óptimos sin perder
+          calidad.</p>
+      </div>
+      <div class="porque-item">
+        <h3>🔍 Atención al Detalle</h3>
+        <p>Cuidamos cada píxel, línea de código y palabra para que tu producto no solo funcione, sino que brille.</p>
+      </div>
+      <div class="porque-item">
+        <h3>🌱 Impacto Sostenible</h3>
+        <p>No construimos solo proyectos, sino soluciones que evolucionan contigo y generan impacto positivo a largo
+          plazo.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 📩 Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>¡Conectemos!</h2>
+    <p>Completa el formulario para que podamos conocerte mejor y responderte lo antes posible.</p>
+
+    <form class="formulario" id="formContacto">
+      <!-- Nombres -->
+      <div>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Ejemplo: Anelí Rosa" required>
+      </div>
+
+      <!-- Apellidos -->
+      <div>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" placeholder="Ejemplo: Mejía Chirhuana" required>
+      </div>
+
+      <!-- Edad -->
+      <div>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="45" placeholder="Entre 15 y 45 años. Ej: 18 años" required>
+      </div>
+
+      <!-- Grado de estudios -->
+      <div>
+        <label for="grado">Grado de estudios:</label>
+        <select id="grado" name="grado" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="secundaria">Secundaria en curso / completa</option>
+          <option value="tecnico">Técnico / Instituto</option>
+          <option value="universitario">Universitario en curso</option>
+          <option value="profesional">Universitario completo</option>
+          <option value="postgrado">Postgrado / Maestría</option>
+        </select>
+      </div>
+
+      <!-- Ciudad y país -->
+      <div>
+        <label for="ciudad">Ciudad/País:</label>
+        <input type="text" id="ciudad" name="ciudad" placeholder="Ejemplo: Lima, Perú" required>
+      </div>
+
+      <!-- Teléfono -->
+      <div>
+        <label for="telefono">Número de teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 999 999" pattern="^\+?[0-9\s]{7,15}$"
+          required>
+      </div>
+
+      <!-- Correo -->
+      <div>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@gmail.com" required>
+      </div>
+
+      <!-- Mensaje -->
+      <div>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos, ¿en qué podemos ayudarte?..." rows="6" required></textarea>
+      </div>
+
+      <button type="submit">Enviar Mensaje</button>
+      <p id="estado-form" class="estado"></p>
+    </form>
+  </section>
+
+
+  <!-- 📌 Footer -->
+  <footer>
+    <p>© 2025 Digital Dreamers. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+  <script src="JS/formContacto.js">
+  </script>
+
+</body>
+
+</html>

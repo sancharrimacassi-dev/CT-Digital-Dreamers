@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Perfil Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--Copy del bootstrap-->
+    <link rel="stylesheet" href="CSS/estilo-calc.css"> <!--CONECTAR EL CSS-->
+</head>
+
+<body>
+
+    <!-- Esta es la barra de navegación -->
+    <div class="barra-nav">
+        <nav>
+            <div class="nav-logo"> Digital Dreamers</div>
+            <div class="nav-menu">
+                <a class="menu-boton" href="index.html">Inicio </a>
+                <a class="menu-boton" href="nosotras.html">Sobre nosotras</a>
+                <a class="menu-boton" href="valores.html">Nuestros valores</a>
+                <a class="menu-boton" href="contacto.html">Contacto</a>
+                <a class="menu-boton" href="calculadora.html">Calculadora</a>
+            </div>
+            <div class="nav-buscador">
+                <input type="text" placeholder="Buscar">
+                <button type="submit">🔍</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="contenedor shadow">
+        <div class="titulo">
+            <h1>Calculadora de Perfil Profesional</h1>
+        </div>
+
+        <div>
+
+            <form id="formulario">
+                <div>
+                    <p id="pregunta">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                    <div>
+                        <button type="button" id="op1" class="shadow">Opción 1</button>
+                        <button type="button" id="op2" class="shadow">Opción 2</button>
+                        <button type="button" id="op3" class="shadow">Opción 3</button>
+                        <button type="button" id="op4" class="shadow">Opción 4</button>
+                    </div>
+                </div>
+                <div>
+                    <button type="reset" id="btnBorrar">Borrar respuesta</button>
+                </div>
+            </form>
+
+        </div>
+
+        <h2 id="resultado"></h2>
+        <p id="descripción"></p>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Digital Dreamers. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
+
+    <script src="JS/formCalculadora.js"></script>
+
+</body>
