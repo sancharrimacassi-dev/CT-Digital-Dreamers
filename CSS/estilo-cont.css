@@ -1,0 +1,324 @@
+:root {
+  --morado-oscuro: #493D9E;
+  --morado-claro: #B2A5FF;
+  --lila: #DAD2FF;
+  --amarillo: #FFF2AF;
+}
+
+
+/* 🌐 Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #DAD2FF;
+  color: #333;
+}
+
+
+/* 🔝 Navbar */
+/*esta es la barra de navegación*/
+
+.barra-nav {
+  background-color: #493D9E;
+  /* morado profundo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 0.5fr;
+  gap: 10px;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+.menu-boton {
+  border: none;
+  max-width: 20%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background-color: #493D9E;
+  /* morado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-boton:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.menu-boton:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+.nav-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #FFF2AF;
+  padding: 5px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  max-height: 80%;
+}
+
+.nav-buscador input {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #493D9E;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.nav-buscador button {
+  background: none;
+  border: none;
+  color: #493D9E;
+  /* morado */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buscador button:hover {
+  background: #B2A5FF;
+  /* amarillo pastel */
+}
+
+/*aquí termina la barra de navegación*/
+
+
+/* 🌟 Servicios */
+.servicios {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--lila);
+}
+
+.servicios h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--morado-oscuro);
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.servicio {
+  background-color: var(--amarillo);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: var(--morado-oscuro);
+}
+
+/* 💡 ¿Por qué elegirnos? */
+.porque {
+  padding: 80px 20px;
+  text-align: center;
+  background: white;
+}
+
+.porque h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--morado-oscuro);
+}
+
+.porque-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.porque-item {
+  background: var(--morado-claro);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* 📩 Contacto */
+.contacto {
+  padding: 80px 20px;
+  background: var(--morado-oscuro);
+  color: white;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--amarillo);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: var(--lila);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.formulario label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--morado-oscuro);
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 12px;
+  border: 2px solid var(--morado-oscuro);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  background: white;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  border-color: var(--morado-claro);
+  box-shadow: 0 0 8px rgba(73, 61, 158, 0.4);
+  outline: none;
+}
+
+.formulario button {
+  background: var(--morado-oscuro);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.formulario button:hover {
+  background: var(--morado-claro);
+  color: var(--morado-oscuro);
+  /* más legible */
+  transform: translateY(-3px);
+}
+
+.estado {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--morado-oscuro);
+}
+
+
+/*Este es el footer*/
+
+footer {
+  background: var(--amarillo);
+  color: var(--morado-oscuro);
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*aquí termina el footer*/
+
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  nav {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .servicios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .porque-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario {
+    padding: 20px;
+    width: 90%;
+  }
+}

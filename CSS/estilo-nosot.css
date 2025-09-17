@@ -1,0 +1,375 @@
+
+
+/* Estilos Generales del Cuerpo */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #DAD2FF;
+  color: #333;
+}
+
+
+/*esta es la barra de navegación*/
+
+.barra-nav {
+  background-color: #493D9E;
+  /* morado profundo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 0.5fr;
+  gap: 10px;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+.menu-boton {
+  border: none;
+  max-width: 20%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background-color: #493D9E;
+  /* morado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-boton:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.menu-boton:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+.nav-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #FFF2AF;
+  padding: 5px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  max-height: 80%;
+}
+
+.nav-buscador input {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #493D9E;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.nav-buscador button {
+  background: none;
+  border: none;
+  color: #493D9E;
+  /* morado */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buscador button:hover {
+  background: #B2A5FF;
+  /* amarillo pastel */
+}
+
+/*aquí termina la barra de navegación*/
+
+
+/* Clase para centrar el contenido principal */
+.main-content-width {
+  max-width: 1200px;
+  /* Ancho máximo para el contenido */
+  margin-left: auto;
+  /* Centrado automático */
+  margin-right: auto;
+  /* Centrado automático */
+  padding: 0 20px;
+  /* Espaciado lateral para evitar que el contenido toque los bordes */
+}
+
+/* Contenedor Principal de la Cabecera */
+.main-header-container {
+  background: linear-gradient(to right, #b5d8f0, #a3d6f8);
+  /* Gradiente de rosa a morado */
+  padding: 15px 0;
+  color: rgb(214, 204, 241);
+}
+
+/* Barra de Navegación (bnav) - within main-header-container */
+.bnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  /* Asegura que el nav interno también se centre */
+  margin: 0 auto;
+  /* Centra el nav interno */
+  padding: 0 20px;
+}
+
+.bnav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.bnav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+.botbarra {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.botbarra a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.botbarra:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Sección de Héroe */
+.hero-section-container {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  /* Fondo blanco */
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil para el cuadro */
+  margin-top: 40px;
+  /* Margen superior para separarlo del nav */
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #666;
+  max-width: 800px;
+  /* Limita el ancho del texto dentro del héroe */
+  margin: 0 auto;
+  /* Centra el texto del héroe */
+  line-height: 1.6;
+}
+
+/* Sección "Nuestras Historias" */
+.our-stories-section-container {
+  margin-bottom: 60px;
+  /* Margen inferior para separarlo del footer */
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #ff6b81, #c456ec);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Contenedor de la Rejilla de Tarjetas */
+.story-cards-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Estilos para cada Tarjeta de Historia */
+.story-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #ddd;
+  /* Borde más visible para el cuadro */
+  border-top: 5px solid;
+  /* Mantiene el borde superior de color */
+}
+
+/* Borde superior de color para las tarjetas */
+.story-card:nth-child(1),
+.story-card:nth-child(2),
+.story-card:nth-child(3),
+.story-card:nth-child(4) {
+  border-image: linear-gradient(to right, #ff6b81, #c456ec) 1;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.story-card h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.story-card .role {
+  font-size: 14px;
+  color: #ff6b81;
+  /* Color rosa para los roles */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.story-card .journey {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.story-card .details,
+.story-card .superpower {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.story-card .superpower {
+  font-weight: bold;
+  color: #333;
+  margin-top: 15px;
+}
+
+/* Contenedor Principal del Pie de Página */
+.main-footer-container {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+
+/*Este es el footer*/
+
+footer {
+  background-color: #493D9E;
+  color: #FFF2AF;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px;
+  font-size: 20px;
+  font-weight:700;
+}
+
+/*aquí termina el footer*/
+
+
+
+/* Ajustes para pantallas más pequeñas (Responsive Design) */
+@media (max-width: 768px) {
+  .bnav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bnav-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .botbarra {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .story-cards-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

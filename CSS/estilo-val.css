@@ -1,0 +1,260 @@
+
+
+/*A CONTINUACIÓN LA SECCIÓN VALORES*/
+
+/* Estilos generales */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #DAD2FF;
+  color: #333;
+}
+
+
+/*esta es la barra de navegación*/
+
+.barra-nav {
+  background-color: #493D9E;
+  /* morado profundo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 0.5fr;
+  gap: 10px;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+.menu-boton {
+  border: none;
+  max-width: 20%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background-color: #493D9E;
+  /* morado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-boton:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.menu-boton:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+.nav-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #FFF2AF;
+  padding: 5px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  max-height: 80%;
+}
+
+.nav-buscador input {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #493D9E;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.nav-buscador button {
+  background: none;
+  border: none;
+  color: #493D9E;
+  /* morado */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buscador button:hover {
+  background: #B2A5FF;
+  /* amarillo pastel */
+}
+
+/*aquí termina la barra de navegación*/
+
+
+/* Título principal centrado */
+h1 {
+  font-size: 90px;
+  color: #493D9E
+}
+
+.fondo1 {
+  background-color: rgb(194, 185, 248);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #493D9E
+}
+
+/* Sección de Pilares Fundamentales */
+.container h2 {
+  color: rgb(73, 61, 158);
+  border-bottom: 4px solid rgb(137, 106, 250);
+  padding-bottom: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Columnas con sombra */
+.shadow {
+  padding: 40px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.5s ease;
+  border-top: 6px solid rgba(178, 165, 255);
+  border-radius: 12px;
+}
+
+/*Aplica este estilo solo cuando el puntero del mouse está sobre el elemento*/
+.shadow:hover {
+  transform: translateY(-20px);
+  /* Mueve la tarjeta hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  /* Sombra más grande */
+}
+
+.letra1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.letra2 {
+  font-family: "Macondo", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.letra3 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letra4 {
+  font-family: "Concert One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cuadro {
+  padding: 20px;
+  /*espacio dentro del cuadro*/
+  background-color: rgba(178, 165, 255);
+  border-radius: 8px;
+  text-align: center;
+  color: rgb(53, 44, 122);
+}
+
+
+
+/*Este es el footer*/
+
+footer {
+  background-color: #493D9E;
+  color: #FFF2AF;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px;
+  font-size: 20px;
+  font-weight:700;
+}
+
+/*aquí termina el footer*/
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas (Responsive Design) */
+@media (max-width: 768px) {
+  .bnav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .bnav-menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .botbarra {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .story-cards-grid-container {
+    grid-template-columns: 1fr;
+  }
+}

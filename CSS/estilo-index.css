@@ -1,0 +1,358 @@
+/*A continuación, css del index.html*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #DAD2FF;
+  color: #333;
+}
+
+
+/*esta es la barra de navegación*/
+
+.barra-nav {
+  background-color: #493D9E;
+  /* morado profundo */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 0.5fr;
+  gap: 10px;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+.menu-boton {
+  border: none;
+  max-width: 20%;
+  padding: 8px 12px;
+  border-radius: 18px;
+  background-color: #493D9E;
+  /* morado */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-boton:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.menu-boton:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+}
+
+.nav-buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #FFF2AF;
+  padding: 5px 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  max-height: 80%;
+}
+
+.nav-buscador input {
+  border: none;
+  font-size: 16px;
+  background: transparent;
+  color: #493D9E;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+.nav-buscador button {
+  background: none;
+  border: none;
+  color: #493D9E;
+  /* morado */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buscador button:hover {
+  background: #B2A5FF;
+  /* amarillo pastel */
+}
+
+/*aquí termina la barra de navegación*/
+
+
+
+/*esta es la SECCIÓN 1 de presentación*/
+
+.seccion1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #B2A5FF;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  color: #493D9E;
+  font-weight: bold;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  color: #493D9E;
+}
+
+.sec1-presentacion {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  border-bottom: #FFF2AF solid 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 50px 100px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.sec-texto {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  padding: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #493D9E;
+}
+
+.sec-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  border-radius: 20px;
+  width: 80%;
+  margin: 15px;
+}
+
+.sec-img:hover {
+  transform: translateY(-10px);
+}
+
+/*aquí termina la presentación*/
+
+
+/*esta es la SECCIÓN 2 presentación del propósito general*/
+
+.seccion2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #FFF2AF;
+}
+
+.sec2-proposito {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  border-bottom: #B2A5FF solid 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 50px 100px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+/*aquí termina el propósito*/
+
+
+/*estas son las cartillas de la presentación breve de cada integrante*/
+
+.seccion3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+}
+
+.cont-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 50px 100px;
+  padding: 15px;
+}
+
+.cont-tarjeta {
+  background: #FFF2AF;
+  /* amarillo pastel */
+  max-width: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-top: solid 10px #B2A5FF;
+  /* lila */
+}
+
+.cont-tarjeta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cont-tarjeta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tarjeta-texto {
+  padding: 20px;
+  text-align: center;
+}
+
+.tarjeta-texto h3 {
+  margin: 0;
+  color: #493D9E;
+}
+
+.tarjeta-texto p {
+  color: #493D9E;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/*aquí terminan las cartillas*/
+
+
+/*este es el atajo hacía la pestaña sobre nosotras*/
+
+.seccion4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  background-color: #DAD2FF;
+    padding-bottom: 100px;
+}
+
+.atajo-boton {
+  display: flex;
+  justify-content: center;
+}
+
+.boton-nosotras {
+  border: none;
+  border-radius: 20px;
+  background-color: #B2A5FF;
+  /* lila claro */
+  color: #493D9E;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boton-nosotras:hover {
+  background-color: #FFF2AF;
+  /* amarillo pastel */
+  color: #493D9E;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+.boton-nosotras:active {
+  background-color: #493D9E;
+  color: #FFF2AF;
+  text-decoration: none;
+}
+
+/*aquí terminan el atajo*/
+
+
+/*Este es el footer*/
+
+footer {
+  background-color: #493D9E;
+  color: #FFF2AF;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0px;
+  font-size: 20px;
+  font-weight:700;
+}
+
+/*aquí termina el footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas (Responsive Design) */
+@media (max-width: 768px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+  }
+
+  .botbarra {
+    width: 100%;
+  }
+
+}
